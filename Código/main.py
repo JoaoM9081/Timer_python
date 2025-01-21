@@ -15,7 +15,7 @@ t = ler_int('\033[1mDigite o tempo em (segundos) para o timer: \033[m')
 # Quando t = 0, retornará False
 while t:
     minutos, segundos = divmod(t, 60) # convertendo minutos e segundos
-    timer = f'{segundos:02d}:{minutos:02d}'
+    timer = f'{minutos:02d}:{segundos:02d}'
     print(f'\033[1;34mTimer:\033[m \033[1;36m{timer}\033[m', end="\r")
     sleep(1) # pausa de 1s
     t -= 1
